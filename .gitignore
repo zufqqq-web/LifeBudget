@@ -7,3 +7,6 @@ __pycache__/
 *.pyc
 *.tsbuildinfo
 backend/staticfiles/
+
+# Local Remotion video project and rendered artifacts
+/video/

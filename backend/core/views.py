@@ -18,12 +18,13 @@ from .services import budget, generate
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register(request):
- username=str(request.data.get('username','')).strip(); password=request.data.get('password','')
+ username=str(request.data.get('username','')).strip(); password=request.data.get('password',''); language=request.data.get('language','ru')
+ if language not in ('ru','uz','en'): return Response({'detail':'Unsupported language.'},status=400)
  if not username or len(username)>150 or User.objects.filter(username__iexact=username).exists(): return Response({'detail':'Укажите уникальное имя пользователя.'},status=400)
  try: validate_password(password,User(username=username))
  except DjangoValidationError as e: return Response({'detail':' '.join(e.messages)},status=400)
  with transaction.atomic():
-  user=User.objects.create_user(username=username,password=password); Profile.objects.create(user=user)
+  user=User.objects.create_user(username=username,password=password); Profile.objects.create(user=user,language=language)
  return Response({'token':Token.objects.create(user=user).key,'username':user.username},status=201)
 
 @api_view(['POST'])

@@ -29,6 +29,8 @@ class PlanningTests(TestCase):
   self.assertIsNone(client.get('/api/dashboard/').data['plan'])
  def test_registration_password_validation(self):
   client=APIClient();self.assertEqual(client.post('/api/register/',{'username':'newuser','password':'123'}).status_code,400)
+  self.assertEqual(client.post('/api/register/',{'username':'newuser','password':'valid-password-123','language':'uz'},format='json').status_code,201)
+  self.assertEqual(User.objects.get(username='newuser').profile.language,'uz')
 
  def test_manual_allocations_and_shopping(self):
   client=APIClient();client.force_authenticate(self.user)

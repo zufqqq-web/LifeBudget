@@ -411,3 +411,46 @@ const familyRows = `
 Создайте первую цель и отмечайте свои пополнения.|Birinchi maqsadni yarating va jamg‘armalaringizni qayd eting.|Create your first goal and record contributions.
 `.trim().split('\n').map(line=>line.split('|'));
 for (const [ru,uz,en] of familyRows) translations[ru]=[uz,en];
+const landingRows = `
+ДЕНЬГИ ДЛЯ ЖИЗНИ|HAYOT UCHUN MABLAG‘|MONEY FOR LIFE
+Планируйте деньги.|Pulni rejalashtiring.|Plan your money.
+Живите спокойнее.|Xotirjam yashang.|Live with more ease.
+LifeBudget помогает понять, куда уходят деньги, спланировать покупки и постепенно приблизиться к важным целям.|LifeBudget pulingiz qayerga ketayotganini tushunishga, xaridlarni rejalashtirishga va muhim maqsadlarga yaqinlashishga yordam beradi.|LifeBudget helps you understand where your money goes, plan purchases and make progress toward what matters.
+Создать свой план|O‘z rejangizni yarating|Create your plan
+Как это работает|Bu qanday ishlaydi|How it works
+Для студентов, специалистов и семей|Talabalar, mutaxassislar va oilalar uchun|For students, professionals and families
+Пример интерфейса LifeBudget|LifeBudget interfeysi namunasi|LifeBudget interface example
+ПРИМЕР|NAMUNA|EXAMPLE
+Осталось в этом месяце|Bu oy qolgan mablag‘|Left this month
+После записанных расходов|Qayd etilgan xarajatlardan so‘ng|After recorded expenses
+Запланировано|Rejalashtirilgan|Planned
+Цель накопления|Jamg‘arma maqsadi|Savings goal
+Новый ноутбук|Yangi noutbuk|A new laptop
+ОДИН ПЛАН НА КАЖДЫЙ ДЕНЬ|HAR KUN UCHUN BITTA REJA|ONE PLAN FOR EVERY DAY
+Бюджет — это не только цифры.|Budjet — bu shunchaki raqamlar emas.|A budget is about more than numbers.
+От продуктов на неделю до общей мечты семьи: соберите повседневные решения в одном месте и принимайте их увереннее.|Haftalik mahsulotlardan oilaning umumiy orzusigacha: kundalik qarorlaringizni bir joyda jamlang.|From weekly groceries to a shared family goal, bring everyday decisions together and make them with confidence.
+Возможности LifeBudget|LifeBudget imkoniyatlari|LifeBudget features
+Видьте картину целиком|Hammasini bir joyda ko‘ring|See the whole picture
+Укажите доход и сами распределите бюджет. Записывайте расходы, чтобы видеть, сколько осталось.|Daromadingizni kiriting va budjetni o‘zingiz taqsimlang. Qoldiqni ko‘rish uchun xarajatlarni qayd eting.|Enter your income and allocate your budget yourself. Record expenses to see what remains.
+Ваш бюджет|Sizning budjetingiz|Your budget
+Вы решаете, куда направить деньги|Mablag‘ni qayerga yo‘naltirishni o‘zingiz hal qilasiz|You decide where your money goes
+Меньше думайте о покупках|Xaridlar haqida kamroq bosh qotiring|Take the guesswork out of shopping
+Составьте меню на месяц, откройте рецепты и соберите список покупок. Добавляйте свои товары и цены.|Oylik menyu tuzing, retseptlarni ko‘ring va xaridlar ro‘yxatini yarating. O‘z mahsulotlaringiz va narxlaringizni qo‘shing.|Make a monthly menu, explore recipes and build a shopping list. Add your own items and prices.
+Меню и список на неделю|Menyu va haftalik ro‘yxat|A menu and weekly list
+Копите вместе или для себя|Birga yoki o‘zingiz uchun jamg‘aring|Save together or on your own
+Создавайте личные копилки или приглашайте близких к общей цели. Отмечайте взносы и следите за прогрессом.|Shaxsiy jamg‘armalar yarating yoki yaqinlaringizni umumiy maqsadga taklif qiling. Badallarni va natijani kuzating.|Create personal savings goals or invite family to a shared one. Record contributions and follow your progress.
+Личные и семейные цели|Shaxsiy va oilaviy maqsadlar|Personal and family goals
+ПРОСТО НАЧАТЬ|BOSHLASH OSON|EASY TO GET STARTED
+Три шага к вашему плану|Rejangizga uch qadam|Three steps to your plan
+Настройте бюджет|Budjetni sozlang|Set your budget
+Укажите доход, обязательные расходы и суммы по категориям.|Daromad, majburiy xarajatlar va toifalar bo‘yicha summalarni kiriting.|Enter your income, fixed expenses and category amounts.
+Планируйте и записывайте|Rejalashtiring va qayd eting|Plan and record
+Добавляйте расходы и покупки, создавайте меню и списки.|Xarid va xarajatlarni qo‘shing, menyu va ro‘yxatlar yarating.|Add expenses and purchases, and create menus and lists.
+Двигайтесь к целям|Maqsadlar sari yuring|Move toward your goals
+Откладывайте на важное и отмечайте прогресс в копилке.|Muhim narsalar uchun jamg‘aring va natijangizni kuzatib boring.|Set money aside for what matters and record your progress.
+Понятно, откуда берутся цены|Narxlarning manbasi aniq|Know where prices come from
+В каталоге есть акции Korzinka для Ташкента и области. Цены для расчёта меню пока демонстрационные — они отмечены в приложении.|Katalogda Toshkent shahri va viloyati uchun Korzinka aksiyalari bor. Menyu hisobidagi narxlar hozircha namunaviy va ilovada belgilangan.|The catalog includes Korzinka offers for Tashkent city and region. Menu calculations currently use clearly marked demo prices.
+Копилка помогает вести учёт: реальные деньги приложение не хранит и не переводит.|Jamg‘arma hisob yuritishga yordam beradi: ilova pul saqlamaydi va o‘tkazmaydi.|Savings goals are for tracking: the app does not hold or transfer real money.
+Начать бесплатно|Bepul boshlash|Get started free
+`.trim().split('\n').map(line=>line.split('|'));
+for (const [ru,uz,en] of landingRows) translations[ru]=[uz,en];
