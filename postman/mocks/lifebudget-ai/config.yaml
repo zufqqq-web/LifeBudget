@@ -1,0 +1,10 @@
+version: 1
+id: 62ddd8b2-3c8e-4f94-b6d5-2b2cedf5dfdf
+name: lifebudget-ai
+slug: lifebudget-ai
+protocol: http
+port: 4500
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true

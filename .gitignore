@@ -1,0 +1,9 @@
+.venv/
+node_modules/
+dist/
+.env
+backend/db.sqlite3
+__pycache__/
+*.pyc
+*.tsbuildinfo
+backend/staticfiles/

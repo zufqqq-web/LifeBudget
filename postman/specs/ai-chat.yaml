@@ -1,0 +1,17 @@
+openapi: 3.0.3
+info:
+  title: AI chat compatibility stand-in
+  version: '1.0'
+paths:
+  /chat/completions:
+    post:
+      responses:
+        '200':
+          description: Example compatible response; does not simulate model quality.
+          content:
+            application/json:
+              example:
+                choices:
+                  - message:
+                      role: assistant
+                      content: Проверьте категории расходов и выберите комфортную сумму накоплений.
